@@ -1,0 +1,7 @@
+id,name,kind,guard
+situationS1,Підтвердження після випробувального терміну,SituationTemplate,productivityScore ≥ 6.0
+situationS2,Ініціювання звільнення за низької продуктивності,SituationTemplate,productivityScore < 5.0 три квартали поспіль
+situationS3,Початок адаптації нового співробітника,SituationTemplate,рішення про прийом схвалено керівником
+situationS4,Завершення курсу навчання,SituationTemplate,courseHours ≥ 8
+situationS5,Низька продуктивність: призначення курсу,SituationTemplate,5.0 ≤ productivityScore < 6.5
+situationS6,Заява про звільнення,SituationTemplate,заява зареєстрована в HRIS

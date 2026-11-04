@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+situationS1,eventProbationMaria,kb.ttl,1.0,2026-10-28
+situationS2,eventLowProdPetro,kb.ttl,1.0,2026-10-28
+situationS3,eventHire1,kb.ttl,1.0,2026-10-28
+situationS4,eventCourseAndriy,kb.ttl,1.0,2026-10-28
+situationS5,eventLowProdPetro,kb.ttl,1.0,2026-10-28
+situationS6,eventResignation1,kb.ttl,1.0,2026-10-28

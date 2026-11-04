@@ -1,0 +1,7 @@
+id,name,kind
+stateActive,stateActive,ActiveState
+stateCandidate,stateCandidate,CandidateState
+stateDismissed,stateDismissed,DismissedState
+stateOnboarding,stateOnboarding,OnboardingState
+stateProbation,stateProbation,ProbationState
+stateUnderReview,stateUnderReview,UnderReviewState

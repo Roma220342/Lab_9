@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+situationS1,actionConfirmEmployment,kb.ttl,1.0,2026-10-28
+situationS2,actionInitiateDismissal,kb.ttl,1.0,2026-10-28
+situationS3,actionStartOnboarding,kb.ttl,1.0,2026-10-28
+situationS4,actionUpdateCompetence,kb.ttl,1.0,2026-10-28
+situationS5,actionAssignCourse,kb.ttl,1.0,2026-10-28
+situationS6,actionCloseRecord,kb.ttl,1.0,2026-10-28

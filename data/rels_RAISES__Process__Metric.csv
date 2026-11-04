@@ -1,0 +1,4 @@
+from,to,source,confidence,validFrom
+motivation1,productivityQ3,kb.ttl,1.0,2026-10-28
+onboarding1,productivityQ3,kb.ttl,1.0,2026-10-28
+training1,productivityQ3,kb.ttl,1.0,2026-10-28

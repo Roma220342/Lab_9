@@ -1,0 +1,8 @@
+from,to,source,confidence,validFrom
+appraisal1,attestation2026,kb.ttl,1.0,2026-10-28
+personnelManagement,appraisal1,kb.ttl,1.0,2026-10-28
+personnelManagement,motivation1,kb.ttl,1.0,2026-10-28
+personnelManagement,recruitment1,kb.ttl,1.0,2026-10-28
+personnelManagement,training1,kb.ttl,1.0,2026-10-28
+recruitment1,interview1,kb.ttl,1.0,2026-10-28
+recruitment1,onboarding1,kb.ttl,1.0,2026-10-28

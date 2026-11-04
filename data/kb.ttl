@@ -1,0 +1,842 @@
+@prefix hr: <http://example.org/hr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hr:eventCourse007 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp007 ;
+    hr:occurredOn "2026-02-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse011 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp011 ;
+    hr:occurredOn "2026-05-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse012 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp012 ;
+    hr:occurredOn "2026-05-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse015 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp015 ;
+    hr:occurredOn "2026-03-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse016 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp016 ;
+    hr:occurredOn "2026-09-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse018 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp018 ;
+    hr:occurredOn "2026-02-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse019 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp019 ;
+    hr:occurredOn "2026-08-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse022 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp022 ;
+    hr:occurredOn "2026-05-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventCourse027 a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp027 ;
+    hr:occurredOn "2026-10-15T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventLowProd008 a hr:LowProductivityEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp008 ;
+    hr:occurredOn "2026-10-01T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+hr:eventLowProd020 a hr:LowProductivityEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp020 ;
+    hr:occurredOn "2026-10-01T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+hr:eventLowProd025 a hr:LowProductivityEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp025 ;
+    hr:occurredOn "2026-10-01T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+hr:eventLowProd028 a hr:LowProductivityEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp028 ;
+    hr:occurredOn "2026-10-01T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+hr:eventLowProd030 a hr:LowProductivityEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:emp030 ;
+    hr:occurredOn "2026-10-01T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+<http://example.org/hr/data> a owl:Ontology ;
+    owl:imports <http://example.org/hr> ;
+    owl:versionInfo "1.0.0" .
+
+hr:bonusQ3 a hr:Bonus,
+        owl:NamedIndividual ;
+    hr:raises hr:productivityQ3 .
+
+hr:candidate1 a hr:Candidate,
+        owl:NamedIndividual ;
+    hr:candidateFor hr:pythonDeveloperPost ;
+    hr:fullName "Дмитро Савчук"^^xsd:string ;
+    hr:inState hr:stateCandidate ;
+    hr:submittedResume hr:resume1 .
+
+hr:candidate2 a hr:Candidate,
+        owl:NamedIndividual ;
+    hr:candidateFor hr:recruiterPost ;
+    hr:fullName "Ірина Петренко"^^xsd:string ;
+    hr:submittedResume hr:resume2 .
+
+hr:emp009 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-009"^^xsd:string ;
+    hr:fullName "Богдан Федина"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation,
+        hr:teamCommunication ;
+    hr:hireDate "2022-07-31T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 6.8 ;
+    hr:tenureMonths 51 .
+
+hr:emp013 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-013"^^xsd:string ;
+    hr:fullName "Остап Олійник"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation,
+        hr:pythonProgramming ;
+    hr:hireDate "2019-11-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 9.5 ;
+    hr:tenureMonths 84 .
+
+hr:emp014 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-014"^^xsd:string ;
+    hr:fullName "Ірина Мороз"^^xsd:string ;
+    hr:hasCompetence hr:teamCommunication ;
+    hr:hireDate "2022-05-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 8.4 ;
+    hr:tenureMonths 54 .
+
+hr:emp017 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-017"^^xsd:string ;
+    hr:fullName "Степан Левицький"^^xsd:string ;
+    hr:hasCompetence hr:teamCommunication ;
+    hr:hireDate "2026-01-28T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 6.5 ;
+    hr:tenureMonths 9 .
+
+hr:emp021 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:emp019 ;
+    hr:employeeId "E-021"^^xsd:string ;
+    hr:fullName "Максим Демчук"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2019-11-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 5.3 ;
+    hr:tenureMonths 84 .
+
+hr:emp024 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-024"^^xsd:string ;
+    hr:fullName "Дарина Захарчук"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics ;
+    hr:hireDate "2020-11-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 9.5 ;
+    hr:tenureMonths 71 .
+
+hr:emp026 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-026"^^xsd:string ;
+    hr:fullName "Мирослава Стасюк"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:teamCommunication ;
+    hr:hireDate "2019-01-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 7.7 ;
+    hr:tenureMonths 94 .
+
+hr:emp029 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:emp019 ;
+    hr:employeeId "E-029"^^xsd:string ;
+    hr:fullName "Зоряна Дорош"^^xsd:string ;
+    hr:hasCompetence hr:negotiation ;
+    hr:hireDate "2025-10-29T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 8.7 ;
+    hr:tenureMonths 12 .
+
+hr:hris1 a hr:HRIS,
+        owl:NamedIndividual ;
+    hr:storesDocument hr:positionProfilePython,
+        hr:resume1,
+        hr:resume2 ;
+    hr:storesRecordOf hr:andriy,
+        hr:emp007,
+        hr:emp008,
+        hr:emp009,
+        hr:emp010,
+        hr:emp011,
+        hr:emp012,
+        hr:emp013,
+        hr:emp014,
+        hr:emp015,
+        hr:emp016,
+        hr:emp017,
+        hr:emp018,
+        hr:emp019,
+        hr:emp020,
+        hr:emp021,
+        hr:emp022,
+        hr:emp023,
+        hr:emp024,
+        hr:emp025,
+        hr:emp026,
+        hr:emp027,
+        hr:emp028,
+        hr:emp029,
+        hr:emp030,
+        hr:ivan,
+        hr:maria,
+        hr:olena,
+        hr:petro,
+        hr:sofia .
+
+hr:lms1 a hr:LMS,
+        owl:NamedIndividual ;
+    hr:storesDocument hr:trainingPlanPetro ;
+    hr:storesRecordOf hr:andriy,
+        hr:emp007,
+        hr:emp011,
+        hr:emp012,
+        hr:emp015,
+        hr:emp016,
+        hr:emp018,
+        hr:emp019,
+        hr:emp022,
+        hr:emp027,
+        hr:maria .
+
+hr:personnelManagement a hr:HRProcess,
+        owl:NamedIndividual ;
+    hr:hasSubProcess hr:appraisal1,
+        hr:motivation1,
+        hr:recruitment1,
+        hr:training1 .
+
+hr:salaryIvan a hr:Salary,
+        owl:NamedIndividual ;
+    hr:salaryAmount 3200.00 .
+
+hr:situationS1 a hr:SituationTemplate,
+        owl:NamedIndividual ;
+    rdfs:label "Підтвердження після випробувального терміну"@uk ;
+    hr:fromState hr:stateProbation ;
+    hr:guard "productivityScore ≥ 6.0" ;
+    hr:observedBy hr:sensorKPI ;
+    hr:onEvent hr:eventProbationMaria ;
+    hr:performsAction hr:actionConfirmEmployment ;
+    hr:toState hr:stateActive .
+
+hr:situationS2 a hr:SituationTemplate,
+        owl:NamedIndividual ;
+    rdfs:label "Ініціювання звільнення за низької продуктивності"@uk ;
+    hr:fromState hr:stateActive ;
+    hr:guard "productivityScore < 5.0 три квартали поспіль" ;
+    hr:observedBy hr:sensorKPI ;
+    hr:onEvent hr:eventLowProdPetro ;
+    hr:performsAction hr:actionInitiateDismissal ;
+    hr:toState hr:stateUnderReview .
+
+hr:situationS3 a hr:SituationTemplate,
+        owl:NamedIndividual ;
+    rdfs:label "Початок адаптації нового співробітника"@uk ;
+    hr:fromState hr:stateCandidate ;
+    hr:guard "рішення про прийом схвалено керівником" ;
+    hr:observedBy hr:sensorHRIS ;
+    hr:onEvent hr:eventHire1 ;
+    hr:performsAction hr:actionStartOnboarding ;
+    hr:toState hr:stateOnboarding .
+
+hr:situationS4 a hr:SituationTemplate,
+        owl:NamedIndividual ;
+    rdfs:label "Завершення курсу навчання"@uk ;
+    hr:fromState hr:stateActive ;
+    hr:guard "courseHours ≥ 8" ;
+    hr:observedBy hr:sensorLMS ;
+    hr:onEvent hr:eventCourseAndriy ;
+    hr:performsAction hr:actionUpdateCompetence ;
+    hr:toState hr:stateActive .
+
+hr:situationS5 a hr:SituationTemplate,
+        owl:NamedIndividual ;
+    rdfs:label "Низька продуктивність: призначення курсу"@uk ;
+    hr:fromState hr:stateActive ;
+    hr:guard "5.0 ≤ productivityScore < 6.5" ;
+    hr:observedBy hr:sensorKPI ;
+    hr:onEvent hr:eventLowProdPetro ;
+    hr:performsAction hr:actionAssignCourse ;
+    hr:toState hr:stateActive .
+
+hr:situationS6 a hr:SituationTemplate,
+        owl:NamedIndividual ;
+    rdfs:label "Заява про звільнення"@uk ;
+    hr:fromState hr:stateActive ;
+    hr:guard "заява зареєстрована в HRIS" ;
+    hr:observedBy hr:sensorHRIS ;
+    hr:onEvent hr:eventResignation1 ;
+    hr:performsAction hr:actionCloseRecord ;
+    hr:toState hr:stateDismissed .
+
+hr:actionAssignCourse a hr:AssignCourseAction,
+        owl:NamedIndividual .
+
+hr:actionCloseRecord a hr:CloseRecordAction,
+        owl:NamedIndividual .
+
+hr:actionConfirmEmployment a hr:ConfirmEmploymentAction,
+        owl:NamedIndividual .
+
+hr:actionInitiateDismissal a hr:InitiateDismissalAction,
+        owl:NamedIndividual .
+
+hr:actionStartOnboarding a hr:StartOnboardingAction,
+        owl:NamedIndividual .
+
+hr:actionUpdateCompetence a hr:UpdateCompetenceAction,
+        owl:NamedIndividual .
+
+hr:appraisal1 a hr:Appraisal,
+        owl:NamedIndividual ;
+    hr:evaluatesMetric hr:productivityQ3 ;
+    hr:hasSubProcess hr:attestation2026 .
+
+hr:attestation2026 a hr:Attestation,
+        owl:NamedIndividual ;
+    hr:evaluates hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:evaluatesMetric hr:kpiSprint .
+
+hr:emp008 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-008"^^xsd:string ;
+    hr:fullName "Оксана Яремчук"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:pythonProgramming ;
+    hr:hireDate "2025-07-29T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 4.1 ;
+    hr:tenureMonths 15 .
+
+hr:emp010 a hr:Manager,
+        owl:NamedIndividual ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-010"^^xsd:string ;
+    hr:fullName "Христина Ткачук"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2026-02-27T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:hrManagerPost ;
+    hr:productivityScore 7.8 ;
+    hr:tenureMonths 8 .
+
+hr:emp020 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-020"^^xsd:string ;
+    hr:fullName "Уляна Литвин"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2018-12-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 3.5 ;
+    hr:tenureMonths 95 .
+
+hr:emp025 a hr:Recruiter,
+        owl:NamedIndividual ;
+    hr:directManager hr:emp019 ;
+    hr:employeeId "E-025"^^xsd:string ;
+    hr:fullName "Олег Павлюк"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:teamCommunication ;
+    hr:hireDate "2020-12-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:recruiterPost ;
+    hr:productivityScore 4.5 ;
+    hr:tenureMonths 70 .
+
+hr:emp028 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:emp023 ;
+    hr:employeeId "E-028"^^xsd:string ;
+    hr:fullName "Святослав Гуменюк"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation,
+        hr:pythonProgramming ;
+    hr:hireDate "2025-10-29T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 4.8 ;
+    hr:tenureMonths 12 .
+
+hr:emp030 a hr:Recruiter,
+        owl:NamedIndividual ;
+    hr:directManager hr:emp023 ;
+    hr:employeeId "E-030"^^xsd:string ;
+    hr:fullName "Ярослав Вовк"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2025-03-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:recruiterPost ;
+    hr:productivityScore 4.8 ;
+    hr:tenureMonths 19 .
+
+hr:eventCourseAndriy a hr:CourseCompletedEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:andriy ;
+    hr:occurredOn "2026-09-20T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorLMS .
+
+hr:eventHire1 a hr:HireEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:maria ;
+    hr:occurredOn "2026-05-02T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorHRIS .
+
+hr:eventProbationMaria a hr:ProbationReviewEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:maria ;
+    hr:occurredOn "2026-10-02T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+hr:eventResignation1 a hr:ResignationRequestEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:sofia ;
+    hr:occurredOn "2026-10-10T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorHRIS .
+
+hr:interview1 a hr:Interview,
+        owl:NamedIndividual .
+
+hr:kpiSprint a hr:KPI,
+        owl:NamedIndividual ;
+    hr:kpiTarget 90.0 .
+
+hr:motivation1 a hr:Motivation,
+        owl:NamedIndividual ;
+    hr:lowers hr:turnover2026 ;
+    hr:raises hr:productivityQ3 .
+
+hr:onboarding1 a hr:Onboarding,
+        owl:NamedIndividual ;
+    hr:raises hr:productivityQ3 .
+
+hr:promotion1 a hr:Promotion,
+        owl:NamedIndividual ;
+    hr:decisionAbout hr:andriy ;
+    hr:raises hr:productivityQ3 .
+
+hr:recruitment1 a hr:Recruitment,
+        owl:NamedIndividual ;
+    hr:hasSubProcess hr:interview1,
+        hr:onboarding1 ;
+    hr:requiresDocument hr:positionProfilePython .
+
+hr:ruleLowProductivity a hr:DecisionRule,
+        owl:NamedIndividual ;
+    hr:ruleLeadsTo hr:dismissalProposal1 .
+
+hr:stateDismissed a hr:DismissedState,
+        owl:NamedIndividual .
+
+hr:stateOnboarding a hr:OnboardingState,
+        owl:NamedIndividual .
+
+hr:stateUnderReview a hr:UnderReviewState,
+        owl:NamedIndividual .
+
+hr:training1 a hr:Training,
+        owl:NamedIndividual ;
+    hr:raises hr:productivityQ3 .
+
+hr:trainingPlanPetro a hr:TrainingPlan,
+        owl:NamedIndividual ;
+    hr:includesCourse hr:negotiationCourse,
+        hr:pythonAdvancedCourse ;
+    hr:planFor hr:petro .
+
+hr:turnover2026 a hr:Turnover,
+        owl:NamedIndividual ;
+    hr:turnoverRate 12.5 .
+
+hr:dismissalProposal1 a hr:Dismissal,
+        owl:NamedIndividual ;
+    hr:decisionAbout hr:petro ;
+    hr:lowers hr:productivityQ3 .
+
+hr:emp007 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:negotiationCourse ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-007"^^xsd:string ;
+    hr:fullName "Тарас Гнатюк"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation,
+        hr:teamCommunication ;
+    hr:hireDate "2026-07-29T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateProbation ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 7.1 ;
+    hr:tenureMonths 3 .
+
+hr:emp011 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:pythonAdvancedCourse ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-011"^^xsd:string ;
+    hr:fullName "Юрій Кравець"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:pythonProgramming ;
+    hr:hireDate "2022-07-31T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 8.8 ;
+    hr:tenureMonths 51 .
+
+hr:emp012 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:negotiationCourse ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-012"^^xsd:string ;
+    hr:fullName "Наталія Романюк"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2019-05-02T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 7.8 ;
+    hr:tenureMonths 90 .
+
+hr:emp015 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:negotiationCourse ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-015"^^xsd:string ;
+    hr:fullName "Василь Пономаренко"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics ;
+    hr:hireDate "2019-01-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 7.0 ;
+    hr:tenureMonths 94 .
+
+hr:emp016 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:pythonAdvancedCourse ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-016"^^xsd:string ;
+    hr:fullName "Галина Бойко"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation,
+        hr:teamCommunication ;
+    hr:hireDate "2023-12-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 5.1 ;
+    hr:tenureMonths 34 .
+
+hr:emp018 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:pythonAdvancedCourse ;
+    hr:directManager hr:emp010 ;
+    hr:employeeId "E-018"^^xsd:string ;
+    hr:fullName "Леся Савченко"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation ;
+    hr:hireDate "2025-11-28T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 6.1 ;
+    hr:tenureMonths 11 .
+
+hr:emp022 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:negotiationCourse ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-022"^^xsd:string ;
+    hr:fullName "Ольга Головатий"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2020-12-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 6.8 ;
+    hr:tenureMonths 70 .
+
+hr:emp023 a hr:Manager,
+        owl:NamedIndividual ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-023"^^xsd:string ;
+    hr:fullName "Роман Остапчук"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2024-01-29T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:teamLeadPost ;
+    hr:productivityScore 5.0 ;
+    hr:tenureMonths 33 .
+
+hr:emp027 a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:pythonAdvancedCourse ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-027"^^xsd:string ;
+    hr:fullName "Тетяна Семенко"^^xsd:string ;
+    hr:hasCompetence hr:negotiation ;
+    hr:hireDate "2023-12-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 6.3 ;
+    hr:tenureMonths 34 .
+
+hr:eventLowProdPetro a hr:LowProductivityEvent,
+        owl:NamedIndividual ;
+    hr:concernsEmployee hr:petro ;
+    hr:occurredOn "2026-10-01T00:00:00"^^xsd:dateTime ;
+    hr:reportedBy hr:sensorKPI .
+
+hr:hrManagerPost a hr:Position,
+        owl:NamedIndividual ;
+    hr:positionTitle "HR-менеджер"^^xsd:string ;
+    hr:requiresCompetence hr:hrAnalytics,
+        hr:negotiation ;
+    hr:salaryGrade 7 .
+
+hr:positionProfilePython a hr:PositionProfile,
+        owl:NamedIndividual .
+
+hr:resume1 a hr:Resume,
+        owl:NamedIndividual .
+
+hr:resume2 a hr:Resume,
+        owl:NamedIndividual .
+
+hr:sofia a hr:Recruiter,
+        owl:NamedIndividual ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-006"^^xsd:string ;
+    hr:fullName "Софія Лисенко"^^xsd:string ;
+    hr:hasCompetence hr:negotiation ;
+    hr:hireDate "2022-02-14T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:recruiterPost ;
+    hr:productivityScore 7.0 ;
+    hr:tenureMonths 56 .
+
+hr:stateCandidate a hr:CandidateState,
+        owl:NamedIndividual .
+
+hr:stateProbation a hr:ProbationState,
+        owl:NamedIndividual .
+
+hr:teamLeadPost a hr:Position,
+        owl:NamedIndividual ;
+    hr:positionTitle "Керівник команди"^^xsd:string ;
+    hr:requiresCompetence hr:negotiation,
+        hr:teamCommunication ;
+    hr:salaryGrade 7 .
+
+hr:andriy a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:pythonAdvancedCourse ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-005"^^xsd:string ;
+    hr:fullName "Андрій Мельник"^^xsd:string ;
+    hr:hasCompetence hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2021-09-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 9.1 ;
+    hr:tenureMonths 61 .
+
+hr:maria a hr:Employee,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:negotiationCourse ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-004"^^xsd:string ;
+    hr:fullName "Марія Гончар"^^xsd:string ;
+    hr:hasCompetence hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:hireDate "2026-05-02T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateProbation ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 6.5 ;
+    hr:tenureMonths 5 .
+
+hr:petro a hr:Employee,
+        owl:NamedIndividual ;
+    hr:directManager hr:ivan ;
+    hr:employeeId "E-003"^^xsd:string ;
+    hr:fullName "Петро Бондар"^^xsd:string ;
+    hr:hasCompetence hr:pythonProgramming ;
+    hr:hireDate "2023-01-10T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:pythonDeveloperPost ;
+    hr:productivityScore 4.2 ;
+    hr:tenureMonths 44 .
+
+hr:recruiterPost a hr:Position,
+        owl:NamedIndividual ;
+    hr:positionTitle "Рекрутер"^^xsd:string ;
+    hr:requiresCompetence hr:negotiation ;
+    hr:salaryGrade 4 .
+
+hr:sensorHRIS a hr:HRISSensor,
+        owl:NamedIndividual .
+
+hr:emp019 a hr:Manager,
+        owl:NamedIndividual ;
+    hr:completedCourse hr:pythonAdvancedCourse ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-019"^^xsd:string ;
+    hr:fullName "Назар Кузьмич"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:pythonProgramming ;
+    hr:hireDate "2020-11-30T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:occupies hr:teamLeadPost ;
+    hr:productivityScore 7.7 ;
+    hr:tenureMonths 71 .
+
+hr:negotiationCourse a hr:Course,
+        owl:NamedIndividual ;
+    hr:courseHours 16 ;
+    hr:courseTitle "Ефективні перемовини"^^xsd:string ;
+    hr:raises hr:productivityQ3 .
+
+hr:pythonAdvancedCourse a hr:Course,
+        owl:NamedIndividual ;
+    hr:courseHours 40 ;
+    hr:courseTitle "Python Advanced"^^xsd:string ;
+    hr:raises hr:productivityQ3 .
+
+hr:productivityQ3 a hr:Productivity,
+        owl:NamedIndividual .
+
+hr:sensorKPI a hr:KPISensor,
+        owl:NamedIndividual .
+
+hr:olena a hr:Manager,
+        owl:NamedIndividual ;
+    hr:appliesRule hr:ruleLowProductivity ;
+    hr:employeeId "E-001"^^xsd:string ;
+    hr:fullName "Олена Коваль"^^xsd:string ;
+    hr:hasCompetence hr:hrAnalytics,
+        hr:negotiation ;
+    hr:hireDate "2019-03-01T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:makesDecision hr:dismissalProposal1 ;
+    hr:occupies hr:hrManagerPost ;
+    hr:productivityScore 7.9 ;
+    hr:tenureMonths 88 .
+
+hr:sensorLMS a hr:LMSSensor,
+        owl:NamedIndividual .
+
+hr:hrAnalytics a hr:HardSkill,
+        owl:NamedIndividual .
+
+hr:ivan a hr:Manager,
+        owl:NamedIndividual ;
+    hr:directManager hr:olena ;
+    hr:employeeId "E-002"^^xsd:string ;
+    hr:fullName "Іван Шевчук"^^xsd:string ;
+    hr:hasCompetence hr:negotiation,
+        hr:teamCommunication ;
+    hr:hireDate "2020-06-15T00:00:00"^^xsd:dateTime ;
+    hr:inState hr:stateActive ;
+    hr:makesDecision hr:promotion1 ;
+    hr:occupies hr:teamLeadPost ;
+    hr:productivityScore 8.6 ;
+    hr:tenureMonths 76 .
+
+hr:pythonProgramming a hr:HardSkill,
+        owl:NamedIndividual .
+
+hr:teamCommunication a hr:SoftSkill,
+        owl:NamedIndividual .
+
+hr:negotiation a hr:SoftSkill,
+        owl:NamedIndividual .
+
+hr:pythonDeveloperPost a hr:Position,
+        owl:NamedIndividual ;
+    hr:positionTitle "Python-розробник"^^xsd:string ;
+    hr:requiresCompetence hr:pythonProgramming,
+        hr:teamCommunication ;
+    hr:salaryGrade 5 .
+
+hr:stateActive a hr:ActiveState,
+        owl:NamedIndividual .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( hr:personnelManagement hr:recruitment1 hr:interview1 hr:onboarding1 hr:appraisal1 hr:attestation2026 hr:training1 hr:motivation1 hr:pythonDeveloperPost hr:teamLeadPost hr:hrManagerPost hr:recruiterPost hr:pythonProgramming hr:hrAnalytics hr:negotiation hr:teamCommunication hr:olena hr:ivan hr:petro hr:maria hr:andriy hr:sofia hr:candidate1 hr:candidate2 hr:negotiationCourse hr:pythonAdvancedCourse hr:hris1 hr:lms1 hr:productivityQ3 hr:turnover2026 hr:kpiSprint hr:salaryIvan hr:bonusQ3 hr:promotion1 hr:dismissalProposal1 hr:ruleLowProductivity hr:resume1 hr:resume2 hr:positionProfilePython hr:trainingPlanPetro hr:stateCandidate hr:stateOnboarding hr:stateProbation hr:stateActive hr:stateUnderReview hr:stateDismissed hr:eventHire1 hr:eventProbationMaria hr:eventLowProdPetro hr:eventResignation1 hr:eventCourseAndriy hr:actionConfirmEmployment hr:actionInitiateDismissal hr:actionStartOnboarding hr:actionAssignCourse hr:actionUpdateCompetence hr:actionCloseRecord hr:sensorKPI hr:sensorLMS hr:sensorHRIS hr:situationS1 hr:situationS2 hr:situationS3 hr:situationS4 hr:situationS5 hr:situationS6 ) .
+

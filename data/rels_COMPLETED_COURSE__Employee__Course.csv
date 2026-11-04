@@ -1,0 +1,12 @@
+from,to,source,confidence,validFrom
+andriy,pythonAdvancedCourse,kb.ttl,1.0,2021-09-01
+emp007,negotiationCourse,synthetic-enrichment,0.8,2026-07-29
+emp011,pythonAdvancedCourse,synthetic-enrichment,0.8,2022-07-31
+emp012,negotiationCourse,synthetic-enrichment,0.8,2019-05-02
+emp015,negotiationCourse,synthetic-enrichment,0.8,2019-01-01
+emp016,pythonAdvancedCourse,synthetic-enrichment,0.8,2023-12-30
+emp018,pythonAdvancedCourse,synthetic-enrichment,0.8,2025-11-28
+emp019,pythonAdvancedCourse,synthetic-enrichment,0.8,2020-11-30
+emp022,negotiationCourse,synthetic-enrichment,0.8,2020-12-30
+emp027,pythonAdvancedCourse,synthetic-enrichment,0.8,2023-12-30
+maria,negotiationCourse,kb.ttl,1.0,2026-05-02

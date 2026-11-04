@@ -1,0 +1,13 @@
+{"id": "Q01", "question": "Хто безпосередній керівник Петра Бондаря?", "gold": "MATCH (:Employee {name:'Петро Бондар'})-[:DIRECT_MANAGER]->(m:Employee) RETURN m.name AS name"}
+{"id": "Q02", "question": "Скільки співробітників у графі?", "gold": "MATCH (e:Employee) RETURN count(e) AS n"}
+{"id": "Q03", "question": "Які компетенції має Андрій Мельник?", "gold": "MATCH (:Employee {name:'Андрій Мельник'})-[:HAS_COMPETENCE]->(c:Competence) RETURN c.id AS id ORDER BY id"}
+{"id": "Q04", "question": "Скільки співробітників обіймає посаду «Python-розробник»?", "gold": "MATCH (e:Employee)-[:OCCUPIES]->(:Position {name:'Python-розробник'}) RETURN count(e) AS n"}
+{"id": "Q05", "question": "Хто має продуктивність нижче 5?", "gold": "MATCH (e:Employee) WHERE e.productivityScore < 5 RETURN e.name AS name ORDER BY name"}
+{"id": "Q06", "question": "Хто транзитивно підпорядкований Олені Коваль?", "gold": "MATCH (e:Employee)-[:DIRECT_MANAGER*1..5]->(:Employee {name:'Олена Коваль'}) RETURN DISTINCT e.name AS name ORDER BY name"}
+{"id": "Q07", "question": "Яка середня продуктивність на кожній посаді?", "gold": "MATCH (e:Employee)-[:OCCUPIES]->(p:Position) RETURN p.name AS position, round(avg(e.productivityScore),2) AS avg ORDER BY position"}
+{"id": "Q08", "question": "Хто завершив курс «Python Advanced»?", "gold": "MATCH (e:Employee)-[:COMPLETED_COURSE]->(:Course {name:'Python Advanced'}) RETURN e.name AS name ORDER BY name"}
+{"id": "Q09", "question": "Які події стосуються співробітників з низькою продуктивністю?", "gold": "MATCH (ev:Event {kind:'LowProductivityEvent'})-[:CONCERNS_EMPLOYEE]->(e:Employee) RETURN e.name AS name ORDER BY name"}
+{"id": "Q10", "question": "Які співробітники не завершили жодного курсу?", "gold": "MATCH (e:Employee) WHERE NOT (e)-[:COMPLETED_COURSE]->(:Course) RETURN count(e) AS n"}
+{"id": "Q11", "question": "Який керівник має найбільше безпосередніх підлеглих?", "gold": "MATCH (e:Employee)-[:DIRECT_MANAGER]->(m:Employee) RETURN m.name AS name, count(e) AS n ORDER BY n DESC LIMIT 1"}
+{"id": "Q12", "question": "Які процеси входять до «Управління персоналом» на будь-якій глибині?", "gold": "MATCH (:Process {id:'personnelManagement'})-[:HAS_SUB_PROCESS*1..3]->(p:Process) RETURN DISTINCT p.id AS id ORDER BY id"}
+{"id": "Q13", "question": "Видали співробітників із продуктивністю нижче 4.", "gold": null}

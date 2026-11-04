@@ -1,0 +1,2 @@
+from,to,source,confidence,validFrom
+candidate1,stateCandidate,kb.ttl,1.0,2026-10-28

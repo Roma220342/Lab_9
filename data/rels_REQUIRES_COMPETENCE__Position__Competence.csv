@@ -1,0 +1,8 @@
+from,to,source,confidence,validFrom
+hrManagerPost,hrAnalytics,kb.ttl,1.0,2026-10-28
+hrManagerPost,negotiation,kb.ttl,1.0,2026-10-28
+pythonDeveloperPost,pythonProgramming,kb.ttl,1.0,2026-10-28
+pythonDeveloperPost,teamCommunication,kb.ttl,1.0,2026-10-28
+recruiterPost,negotiation,kb.ttl,1.0,2026-10-28
+teamLeadPost,negotiation,kb.ttl,1.0,2026-10-28
+teamLeadPost,teamCommunication,kb.ttl,1.0,2026-10-28

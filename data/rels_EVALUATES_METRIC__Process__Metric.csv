@@ -1,0 +1,3 @@
+from,to,source,confidence,validFrom
+appraisal1,productivityQ3,kb.ttl,1.0,2026-10-28
+attestation2026,kpiSprint,kb.ttl,1.0,2026-10-28

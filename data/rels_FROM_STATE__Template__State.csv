@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+situationS1,stateProbation,kb.ttl,1.0,2026-10-28
+situationS2,stateActive,kb.ttl,1.0,2026-10-28
+situationS3,stateCandidate,kb.ttl,1.0,2026-10-28
+situationS4,stateActive,kb.ttl,1.0,2026-10-28
+situationS5,stateActive,kb.ttl,1.0,2026-10-28
+situationS6,stateActive,kb.ttl,1.0,2026-10-28

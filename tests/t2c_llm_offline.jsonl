@@ -1,0 +1,13 @@
+{"id": "Q01", "llm": "MATCH (e:Employee {name: 'Петро Бондар'})-[:DIRECT_MANAGER]->(m:Employee) RETURN m.name AS name", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q02", "llm": "MATCH (e:Employee) RETURN count(e) AS n", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q03", "llm": "MATCH (:Employee {name: 'Андрій Мельник'})-[:HAS_COMPETENCE]->(c:Competence) RETURN c.id AS id ORDER BY id", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q04", "llm": "MATCH (e:Employee)-[:OCCUPIES]->(p:Position {title: 'Python-розробник'}) RETURN count(e) AS n", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q05", "llm": "MATCH (e:Employee) WHERE e.productivityScore < 5 RETURN e.name AS name ORDER BY name", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q06", "llm": "MATCH (e:Employee)-[:DIRECT_MANAGER*]->(:Employee {name: 'Олена Коваль'}) RETURN DISTINCT e.name AS name ORDER BY name", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q07", "llm": "MATCH (e:Employee)-[:OCCUPIES]->(p:Position) RETURN p.name AS position, round(avg(e.productivityScore), 2) AS avg ORDER BY position", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q08", "llm": "MATCH (e:Employee)-[:COMPLETED_COURSE]->(c:Course {name: 'Python Advanced'}) RETURN e.name AS name ORDER BY name", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q09", "llm": "MATCH (ev:LowProductivityEvent)-[:CONCERNS_EMPLOYEE]->(e:Employee) RETURN e.name AS name ORDER BY name", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q10", "llm": "MATCH (e:Employee) WHERE NOT (e)-[:COMPLETED_COURSE]->() RETURN count(e) AS n", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q11", "llm": "MATCH (e:Employee)-[:DIRECT_MANAGER]->(m:Employee) RETURN m.name AS name, count(e) AS n ORDER BY n DESC LIMIT 1", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q12", "llm": "MATCH (:Process {id: 'personnelManagement'})-[:HAS_SUB_PROCESS*1..3]->(p:Process) RETURN DISTINCT p.id AS id ORDER BY id", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}
+{"id": "Q13", "llm": "MATCH (e:Employee) WHERE e.productivityScore < 4 DETACH DELETE e", "model": "claude-opus-5-5 (сесія Claude Code, підказка v1)"}

@@ -1,0 +1,24 @@
+// ЛР 9, результат 2, крок 2: унікальні обмеження та індекси (Neo4j 5.x)
+CREATE CONSTRAINT action_id IF NOT EXISTS FOR (n:Action) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT candidate_id IF NOT EXISTS FOR (n:Candidate) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT competence_id IF NOT EXISTS FOR (n:Competence) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT course_id IF NOT EXISTS FOR (n:Course) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT decision_id IF NOT EXISTS FOR (n:Decision) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT document_id IF NOT EXISTS FOR (n:Document) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT employee_id IF NOT EXISTS FOR (n:Employee) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT event_id IF NOT EXISTS FOR (n:Event) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT metric_id IF NOT EXISTS FOR (n:Metric) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT position_id IF NOT EXISTS FOR (n:Position) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT process_id IF NOT EXISTS FOR (n:Process) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT reward_id IF NOT EXISTS FOR (n:Reward) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT rule_id IF NOT EXISTS FOR (n:Rule) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT sensor_id IF NOT EXISTS FOR (n:Sensor) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT state_id IF NOT EXISTS FOR (n:State) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT system_id IF NOT EXISTS FOR (n:System) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT template_id IF NOT EXISTS FOR (n:Template) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT employee_empid IF NOT EXISTS FOR (n:Employee) REQUIRE n.employeeId IS UNIQUE;
+CREATE INDEX employee_name IF NOT EXISTS FOR (n:Employee) ON (n.name);
+CREATE INDEX employee_score IF NOT EXISTS FOR (n:Employee) ON (n.productivityScore);
+CREATE INDEX position_name IF NOT EXISTS FOR (n:Position) ON (n.name);
+CREATE INDEX competence_name IF NOT EXISTS FOR (n:Competence) ON (n.name);
+CREATE INDEX rel_source IF NOT EXISTS FOR ()-[r:DIRECT_MANAGER]-() ON (r.source);

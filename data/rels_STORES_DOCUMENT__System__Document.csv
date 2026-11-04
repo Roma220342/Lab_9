@@ -1,0 +1,5 @@
+from,to,source,confidence,validFrom
+hris1,positionProfilePython,kb.ttl,1.0,2026-10-28
+hris1,resume1,kb.ttl,1.0,2026-10-28
+hris1,resume2,kb.ttl,1.0,2026-10-28
+lms1,trainingPlanPetro,kb.ttl,1.0,2026-10-28

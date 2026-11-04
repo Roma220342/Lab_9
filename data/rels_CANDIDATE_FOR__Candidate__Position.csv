@@ -1,0 +1,3 @@
+from,to,source,confidence,validFrom
+candidate1,pythonDeveloperPost,kb.ttl,1.0,2026-10-28
+candidate2,recruiterPost,kb.ttl,1.0,2026-10-28

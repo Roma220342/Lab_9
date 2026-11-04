@@ -1,0 +1,5 @@
+neo4j==5.28.1
+rdflib==7.6.0
+networkx==3.6
+matplotlib>=3.9
+# anthropic>=0.60   # лише для --live-llm

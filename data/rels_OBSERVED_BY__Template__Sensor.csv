@@ -1,0 +1,7 @@
+from,to,source,confidence,validFrom
+situationS1,sensorKPI,kb.ttl,1.0,2026-10-28
+situationS2,sensorKPI,kb.ttl,1.0,2026-10-28
+situationS3,sensorHRIS,kb.ttl,1.0,2026-10-28
+situationS4,sensorLMS,kb.ttl,1.0,2026-10-28
+situationS5,sensorKPI,kb.ttl,1.0,2026-10-28
+situationS6,sensorHRIS,kb.ttl,1.0,2026-10-28

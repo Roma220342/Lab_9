@@ -1,0 +1,4 @@
+id,name,kind
+sensorHRIS,sensorHRIS,HRISSensor
+sensorKPI,sensorKPI,KPISensor
+sensorLMS,sensorLMS,LMSSensor
